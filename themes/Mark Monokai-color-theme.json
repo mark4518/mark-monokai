@@ -168,9 +168,16 @@
 		},
 		{
 			"name": "Other variable",
-			"scope": ["variable.other.property", "variable.other.block"],
+			"scope": [
+				"variable.other.property",
+				"variable.other.block",
+				"variable.other.object.property",
+				"variable.parameter",
+				"variable.other.object.property"
+			],
 			"settings": {
-				"foreground": "#abb2bf"
+				"foreground": "#d19a66",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -190,14 +197,6 @@
 		{
 			"name": "Class property",
 			"scope": "variable.object.property",
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#9CDCFE"
-			}
-		},
-		{
-			"name": "Function argument",
-			"scope": ["variable.parameter", "variable.other.object.property"],
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "#9CDCFE"
