@@ -46,9 +46,17 @@
 		},
 		{
 			"name": "Component attributes",
-			"scope": "meta.object-literal.key",
+			"scope": ["meta.object-literal.key"],
 			"settings": {
-				"foreground": "#9CDCFE"
+				"foreground": "#CCCCCC"
+			}
+		},
+		{
+			"name": "Component attributes",
+			"scope": ["variable.other.constant", "variable.other.readwrite"],
+			"settings": {
+				"foreground": "#CCCCCC",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -83,7 +91,7 @@
 			"name": "Built-in constant",
 			"scope": "constant.language",
 			"settings": {
-				"foreground": "#56b6c2"
+				"foreground": "#569cd6"
 			}
 		},
 		{
@@ -120,7 +128,11 @@
 		},
 		{
 			"name": "Keyword import",
-			"scope": ["keyword.control.import"],
+			"scope": [
+				"keyword.control.import",
+				"keyword.control.export",
+				"keyword.control.from"
+			],
 			"settings": {
 				"foreground": "#C586C0"
 			}
@@ -160,17 +172,11 @@
 				"entity.name.module",
 				"entity.name.type",
 				"storage.identifier",
-				"support.class"
+				"support.class",
+				"variable.other.readwrite"
 			],
 			"settings": {
 				"foreground": "#32bbb0"
-			}
-		},
-		{
-			"name": "Variable alias",
-			"scope": "variable.other.readwrite.alias",
-			"settings": {
-				"foreground": "#9CDCFE"
 			}
 		},
 		{
