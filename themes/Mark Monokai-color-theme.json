@@ -27,7 +27,7 @@
 			"name": "String",
 			"scope": "string",
 			"settings": {
-				"foreground": "#ce9178"
+				"foreground": "#d69d85"
 			}
 		},
 		{
@@ -140,6 +140,13 @@
 			}
 		},
 		{
+			"name": "NULL",
+			"scope": "constant.language.null",
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
 			"name": "Storage type",
 			"scope": "storage.type",
 			"settings": {
@@ -164,6 +171,14 @@
 			"scope": "variable.other.readwrite.alias",
 			"settings": {
 				"foreground": "#9CDCFE"
+			}
+		},
+		{
+			"name": "Class property",
+			"scope": "variable.object.property",
+			"settings": {
+				"foreground": "#d19a66",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -194,14 +209,7 @@
 				"foreground": "#DCDCAA"
 			}
 		},
-		{
-			"name": "Class property",
-			"scope": "variable.object.property",
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#9CDCFE"
-			}
-		},
+
 		{
 			"name": "Function call",
 			"scope": "entity.name.function-call",
@@ -225,6 +233,13 @@
 			],
 			"settings": {
 				"foreground": "#569cd6"
+			}
+		},
+		{
+			"name": "This and super",
+			"scope": ["variable.language.this", "variable.language.super"],
+			"settings": {
+				"foreground": "#37628d"
 			}
 		},
 		{
