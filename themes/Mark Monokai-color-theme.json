@@ -19,8 +19,7 @@
 			"name": "Comment",
 			"scope": ["comment", "string.comment"],
 			"settings": {
-				"foreground": "#0f7a26",
-				"fontStyle": "italic"
+				"foreground": "#0f7a26"
 			}
 		},
 		{
@@ -131,7 +130,8 @@
 			"scope": [
 				"keyword.control.import",
 				"keyword.control.export",
-				"keyword.control.from"
+				"keyword.control.from",
+				"keyword.control.at-rule.import.scss"
 			],
 			"settings": {
 				"foreground": "#C586C0"
@@ -146,7 +146,22 @@
 		},
 		{
 			"name": "Storage",
-			"scope": "storage",
+			"scope": [
+				"storage.type.class",
+				"storage.modifier",
+				"support.type.primitive",
+				"constant.language.null",
+				"constant.language.boolean.false",
+				"constant.language.boolean.true",
+				"entity.other.attribute-name.class.css"
+			],
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"name": "Storage type",
+			"scope": ["storage.type"],
 			"settings": {
 				"foreground": "#569cd6"
 			}
@@ -156,13 +171,6 @@
 			"scope": "constant.language.null",
 			"settings": {
 				"foreground": "#569cd6"
-			}
-		},
-		{
-			"name": "Storage type",
-			"scope": "storage.type",
-			"settings": {
-				"foreground": "#569cca"
 			}
 		},
 		{
@@ -180,8 +188,13 @@
 			}
 		},
 		{
-			"name": "Class property",
-			"scope": "variable.object.property",
+			"name": "Other variable",
+			"scope": [
+				"variable.other.property",
+				"variable.other.block",
+				"variable.other.object.property",
+				"variable.parameter"
+			],
 			"settings": {
 				"foreground": "#d19a66",
 				"fontStyle": "italic"
@@ -189,16 +202,33 @@
 		},
 		{
 			"name": "Other variable",
+			"scope": ["variable.object.property"],
+			"settings": {
+				"foreground": "#d7d7d7",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "CSS",
 			"scope": [
-				"variable.other.property",
-				"variable.other.block",
-				"variable.other.object.property",
-				"variable.parameter",
-				"variable.other.object.property"
+				"keyword.other.unit.px.css",
+				"keyword.other.unit.em.css",
+				"keyword.other.unit.vh.css",
+				"keyword.other.unit.vw.css"
 			],
 			"settings": {
-				"foreground": "#d19a66",
-				"fontStyle": "italic"
+				"foreground": "#999999"
+			}
+		},
+		{
+			"name": "CSS yellow",
+			"scope": [
+				"entity.other.attribute-name.pseudo-class.css",
+				"keyword.other.important.scss",
+				"keyword.control.at-rule.mixin.scss"
+			],
+			"settings": {
+				"foreground": "#C3CC5E"
 			}
 		},
 		{
@@ -273,14 +303,14 @@
 			"name": "Library class/type",
 			"scope": ["support.type", "support.variable"],
 			"settings": {
-				"foreground": "#56b6c2"
+				"foreground": "#569cd6"
 			}
 		},
 		{
 			"name": "Json Property",
 			"scope": "support.dictionary.json",
 			"settings": {
-				"foreground": "#56b6c2"
+				"foreground": "#569cd6"
 			}
 		},
 		{
@@ -289,7 +319,8 @@
 				"support.type.property-name.css",
 				"support.type.property-name.scss",
 				"support.type.property-name.less",
-				"support.type.property-name.sass"
+				"support.type.property-name.sass",
+				"support.type.property-name.json"
 			],
 			"settings": {
 				"foreground": "#abb2bf"
